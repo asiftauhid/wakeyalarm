@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Wakey Alarm
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Wakey Alarm is a fun and interactive alarm clock application that requires you to answer a series of questions based on the weather and the day to turn off the alarm to wake you up and make you ready for the day alongside. This project is built using React and integrates external APIs for weather data.
 
-## Available Scripts
+## Problem it Solves
 
-In the project directory, you can run:
+The app solves the problem of mindlessly turning off alarms and going back to sleep. By forcing the user to answer questions about the current weather, and the day, the user becomes more engaged and aware, making it harder to stay in bed.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Set and manage alarms.
+- Display the current weather, temperature, and forecast.
+- Display the current date, time and the weekday
+- The user has to answer questions (e.g., current temperature) correctly to turn off the alarm.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Setup
 
-### `npm test`
+To set up and run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js installed on your system.
+- An OpenWeatherMap API key.
 
-### `npm run build`
+### Installation Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+    ```
+2. Navigate into the project directory:
+   ```bash
+    cd wakeyalarm
+    ```
+3. Install the dependencies:
+   ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Create a `.env` file in the root directory and add your API keys:
+   ```bash
+    REACT_APP_WEATHER_API_KEY=your_weather_api_key
+    ```
+5. Start the development server:
+   ```bash
+    npm start
+    ```
+6. The app will be available at `http://localhost:3000`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### APIs Used
+Weatherstack API
+Purpose: Fetches the current weather, temperature, and forecast based on the user's location.
+Endpoint: http://api.weatherstack.com/current
+Integration: The app retrieves weather data using geolocation coordinates and displays it on the screen.
 
-### `npm run eject`
+### AI-Generated Code
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project utilized ChatGPT for several aspects, including:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Fixing errors in the code.
+Generating ideas for the overall project structure and API integrations.
+Suggesting improvements to the alarm and weather data handling logic.
+Code snippets: Formatting time functions, geolocation retrieval, and real-time updates using setInterval were suggested by AI.

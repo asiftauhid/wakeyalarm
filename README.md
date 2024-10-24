@@ -19,13 +19,13 @@ To set up and run this project locally, follow these steps:
 
 ### Prerequisites
 - Node.js installed on your system.
-- An OpenWeatherMap API key.
+- An weatherstack API key.
 
 ### Installation Steps
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/asiftauhid/wakeyalarm
     ```
 2. Navigate into the project directory:
    ```bash
@@ -48,15 +48,15 @@ To set up and run this project locally, follow these steps:
 
 ### APIs Used
 Weatherstack API
-Purpose: Fetches the current weather, temperature, and forecast based on the user's location.
-Endpoint: http://api.weatherstack.com/current
-Integration: The app retrieves weather data using geolocation coordinates and displays it on the screen.
+- Purpose: Fetches the current weather, temperature, and forecast based on the user's location.
+- Endpoint: http://api.weatherstack.com/current
+- Integration: The app retrieves weather data using geolocation coordinates and displays it on the screen.
 
-### AI-Generated Code
+### AI Credits
 
 This project utilized ChatGPT for several aspects, including:
 
-Fixing errors in the code.
-Generating ideas for the overall project structure and API integrations.
-Suggesting improvements to the alarm and weather data handling logic.
-Code snippets: Formatting time functions, geolocation retrieval, and real-time updates using setInterval were suggested by AI.
+- Fixing errors in the code.
+- Generating ideas for the overall project structure and API integrations.
+- Suggesting improvements to the alarm and weather data handling logic.
+- Code snippets: Function to format the time, geolocation retrieval, SetAlarmTime input, and real-time updates using setInterval were suggested by AI.

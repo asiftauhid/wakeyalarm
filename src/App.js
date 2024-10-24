@@ -221,7 +221,7 @@ const QuestionSection = ({ stopAlarm, weatherData, dateTime }) => {
           <h3>What day is it?</h3>
           <input
             type="text"
-            placeholder='Wednesday'
+            placeholder='Ex: Wednesday'
             value={userAnswers.day}
             onChange={(e) => setUserAnswers({ ...userAnswers, day: e.target.value })}
           />
